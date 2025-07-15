@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>你也为小比倾倒吗</title>
+    </head>
+    <body>
+        <div id="app">
+            <button v-show="index > 0" @click="index--">上一页</button>
+            <div>
+                <img :src="list[index]" alt="">
+            </div>
+            <button v-show="index < list.length - 1" @click="index++">下一页</button>
+        </div>
+        <!--引入开发版本环境包，包含完整的注释和警告-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+        
+        <!--创建实例，一旦引入VueJS核心包，在全局环境中就有了Vue构造函数-->
+        <script>
+            var app = new Vue({
+                el:"#app",
+                data:{
+                    index: 0,
+                    list:[
+                        './images/1.jpg',
+                        './images/2.jpg',
+                        './images/3.jpg',
+                        './images/4.jpg',
+                        './images/5.jpg',
+                        './images/6.jpg'
+                    ]
+                }
+            })
+        </script>
+    </body>
+</html>
