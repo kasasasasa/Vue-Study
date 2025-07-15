@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>图书管理</title>
+    </head>
+    <body>
+        <div id="app">
+            <h3>书架</h3>
+            <ul>
+                <li v-for="(item,index) in booksList" :key="item.id">
+                    <span>{{ item.name }}</span>
+                    <span>{{ item.author }}</span>
+                <!--注册点击事件：通过id进行删除数组中的对应项-->
+                    <button @click="del(item.id)">删除</button>
+                </li>
+            </ul>
+        </div>
+        <!--引入开发版本环境包，包含完整的注释和警告-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+        
+        <!--创建实例，一旦引入VueJS核心包，在全局环境中就有了Vue构造函数-->
+        <script>
+            var app = new Vue({
+                el:"#app",
+                data:{
+                    booksList:[
+                        {id:1,name:'《红楼梦》',author:'曹雪芹'},
+                        {id:2,name:'《西游记》',author:'吴承恩'},
+                        {id:3,name:'《水浒传》',author:'施耐庵'},
+                        {id:4,name:'《三国演义》',author:'罗贯中'}
+                    ]
+                },
+                methods:{
+                    del (id) {
+                        //console.log('删除',id)
+                        //console.log(this.booksList.filter(item => item.id !== id))
+                        //filter：会根据条件保留满足条件的对应项，得到一个新数组，不会改变原数组
+                        this.booksList = this.booksList.filter(item => item.id !== id)
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
