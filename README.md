@@ -33,4 +33,9 @@ v-bind:属性名="内联语句"/:属性名="内联语句"
 ```
 v-for="(item,index) in 数组"//item 每一项,index 下标
 v-for="item in 数组"//省略index
+v-for="(item,index) in 数组" :key="唯一标识"//给列表项添加唯一标识，便于Vue进行列表项的正确排序复用
+```
+&middot; 给表单使用，双向数据绑定，可以快速获取和设置表单元素内容
+```
+v-model="变量"
 ```
