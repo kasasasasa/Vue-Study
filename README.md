@@ -39,3 +39,19 @@ v-for="(item,index) in 数组" :key="唯一标识"//给列表项添加唯一标�
 ```
 v-model="变量"
 ```
+#### 指令修饰符"."
+指明一些指令后缀，不同后缀封装了不同的处理操作，目的是为了简化代码
+&middot; 按键修饰符：键盘回车监听
+```
+@keyup.enter
+```
+&middot; v-model修饰符
+```
+v-model.trim//去除首尾空格
+v-model.number//转数字
+```
+&middot; 事件修饰符
+```
+@事件名.stop//阻止冒泡
+@事件名.prevent//组织默认行为
+```
