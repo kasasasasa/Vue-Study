@@ -75,7 +75,7 @@
     <div id="app">
         <header class="header">
             <h1>记事本</h1>
-            <input v-model="todoName" @keyup.enter="add" placeholder="请输入待办事项" class="new-todo">
+            <input @keyup.enter="add" v-model="todoName" @keyup.enter="add" placeholder="请输入待办事项" class="new-todo">
             <button @click="add" class="add">添加任务</button>
         </header>
         
