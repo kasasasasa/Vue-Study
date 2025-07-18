@@ -22,7 +22,8 @@ v-else
 ```
 &middot; 事件注册：添加监听+提供处理逻辑
 ```
-v-on:事件名="内联语句"/@事件名="内联语句"
+v-on:事件名="内联语句"
+@事件名="内联语句"
 v-on:事件名="methods中的函数名()"/@事件名="methods中的函数名()"
 ```
 &middot; 动态设置html的标签属性
@@ -34,9 +35,9 @@ v-bind:属性名="内联语句"
 ```
 &middot; 基于数据循环，多次渲染整个元素
 ```
-v-for="(item,index) in 数组"//item 每一项,index 下标
+v-for="(item,index) in 数组" //item 每一项,index 下标
 v-for="item in 数组"//省略index
-v-for="(item,index) in 数组" :key="唯一标识"//给列表项添加唯一标识，便于Vue进行列表项的正确排序复用
+v-for="(item,index) in 数组" :key="唯一标识" //给列表项添加唯一标识，便于Vue进行列表项的正确排序复用
 ```
 &middot; 给表单使用，双向数据绑定，可以快速获取和设置表单元素内容
 ```
@@ -76,3 +77,6 @@ computed:{
 deep:true //对复杂类型深度监视
 immediate:true //初始化立刻执行一次handler方法
 ```
+***
+### 另：Element组件库官网：https://element.eleme.cn/#/zh-CN/component/menu
+非常好的组件库使我成为专业cv工程师（）
