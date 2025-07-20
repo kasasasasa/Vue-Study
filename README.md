@@ -80,4 +80,18 @@ immediate:true //初始化立刻执行一次handler方法
 ***
 ### 另：Element组件库官网：https://element.eleme.cn/#/zh-CN/component/menu
 非常好的组件库使我成为专业cv工程师（）
+### 安装element插件
+```
+yarn add element-ui -S
+```
 ### axios官方文档：https://www.axios-http.cn/
+### 启动项目命令(痛苦的开始)
+调出终端然后输入
+```
+ yarn serve
+```
+### 自动修复格式命令
+非常好用的,简直救我狗命
+```
+npx eslint --fix 文件路径
+```
