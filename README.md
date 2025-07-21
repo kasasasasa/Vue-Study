@@ -78,7 +78,7 @@ deep:true //对复杂类型深度监视
 immediate:true //初始化立刻执行一次handler方法
 ```
 ***
-### 另：Element组件库官网：https://element.eleme.cn/#/zh-CN/component/menu
+### Element组件库官网：https://element.eleme.cn/#/zh-CN/component/menu
 非常好的组件库使我成为专业cv工程师（）
 ### 安装element插件
 ```
