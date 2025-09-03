@@ -34,6 +34,14 @@ git init
 ```
 git remote add origin https://github.com/<你的用户名>/<你的仓库>.git
 ```
+### 查看当前 origin 地址
+```
+git remote -v
+```
+### 更换 origin 地址
+```
+git remote set-url origin https://github.com/kasasasasa/Library-System.git
+```
 ### 创建并切换到新分支
 ```
 git checkout -b new-branch
