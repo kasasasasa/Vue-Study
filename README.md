@@ -1,4 +1,5 @@
 # shopping_2.0
+这是本人搭的一个电商页面，使用的是vue2+elementUI，有些JavaScript逻辑没写好……
 
 ## Project setup
 ```
