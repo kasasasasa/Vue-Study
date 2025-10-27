@@ -48,6 +48,10 @@ git remote set-url origin https://github.com/kasasasasa/Library-System.git
 git config --global user.name "kasasasasa"
 git config --global user.email "your_email@example.com"
 ```
+### 本地到底有什么分支
+```
+git branch
+```
 ### 创建并切换到新分支
 ```
 git checkout -b new-branch
