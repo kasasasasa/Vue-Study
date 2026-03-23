@@ -28,7 +28,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## git上传项目常用命令
 ```
-git add .                    # 添加文件到暂存区（你已做）
+git add .                    # 添加文件到暂存区
 git commit -m "你的提交信息"  # 提交到本地仓库
 git push origin main         # 上传到远程仓库（main 或 master）
 ```
